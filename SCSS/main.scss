@@ -1,0 +1,28 @@
+//CONFIG//
+
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+//LAYOUT//
+
+@import "layout/_font.scss";
+
+@import "layout/_adjustment.scss";
+
+@import "layout/_base.scss";
+
+//SECTION//
+
+@import "section/pagination.scss";
+
+@import "section/first.scss";
+
+@import "section/second.scss";
+
+@import "section/burger.scss";
+
+@import "section/team.scss";
+
+@import "section/menu.scss";
+
+@import "section/review.scss";

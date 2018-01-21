@@ -1,0 +1,42 @@
+ul.pagination__item{
+    left: 95%;
+    top: 10%;
+    position: fixed;
+    color: $white;
+    font-size: 16px;
+}
+
+li.pagination__list{
+   width: 16px;
+   height: 16px;
+   margin-top: 3px;
+   border-radius: 50%;
+   border: 1px solid transparent ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+
+   &:hover{
+    border: 1px solid #ffffff ;
+   }
+
+   &:active{
+    border: 1px solid #ffffff ;
+   }
+   
+}
+
+.pagination__link{
+    
+    content:'';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    @include circle(6px, #ffffff);
+    
+}
+
+ 
+
