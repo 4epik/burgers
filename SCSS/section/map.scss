@@ -1,0 +1,147 @@
+.map{
+    background: url('../images/bg/bg_map_page.jpg') 0 0 no-repeat; 
+    
+    background-size: cover;
+    color: $white;
+    position: relative;
+    
+}
+
+
+
+footer{
+    background: url('../images/bg/footer.jpg') 0 0 no-repeat;
+    background-size: cover;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    height: rem(75px);
+    margin-top: rem(-75px);
+    font-size: rem(14px);
+    z-index: 100;
+
+    @include phone{
+        height: 115px;
+    }
+}
+
+.footer__content{
+    min-width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+
+    @include phone{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+
+
+/*.footer__contact, ul.footer__network{
+    width: 50%;
+    vertical-align: middle;
+} */
+
+
+.footer__contact{
+    margin-left: rem(80px);
+    margin-top: rem(5px);
+
+    @include tablet{
+        margin-left: rem(30px);
+    }
+
+    @include phone{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+ul.footer__network{
+    margin-right: rem(80px);
+    text-align: right;
+
+    @include tablet{
+        margin-right: rem(30px);
+
+    }
+
+    @include phone{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.footer__adress{
+    margin-top: rem(11px);
+    font-weight: 300;
+   
+}
+
+.footer__phone{
+    margin-top: rem(11px);
+    font-weight: 500;
+    color: $orange;
+}
+.footer__phone-img{
+    width: rem(13px);    
+    height: rem(13px);
+}
+
+.footer__phone-img, .footer__phone-number{
+    display: inline-block;
+
+}
+
+.footer__phone-number{
+    margin-left: rem(8px);
+
+
+
+}
+
+.contact__phone{
+    text-decoration: none;
+    color: $orange;
+}
+
+.footer__phone-icon{
+    fill: $orange;
+    width: 100%;
+    height: 100%;
+}
+
+ul.footer__network li{
+    display: inline-block;
+    
+}
+
+li.footer__network-item{
+    width: rem(20px);
+    height: rem(20px);
+    display: inline-block;
+    margin-top: rem(28px);
+    margin-left: rem(20px);
+
+    @include phone{
+        margin-top: rem(21px);
+    }
+}
+
+.footer__network-icon{
+   fill: $grey;
+    width: 100%;
+    height: 100%;
+
+    &:hover{
+         fill: $white;
+
+        }
+}
+

@@ -1,0 +1,284 @@
+.order{
+    background: url('../images/bg/bg_order_page.jpg') 0 0 no-repeat; 
+    box-sizing: border-box;
+    background-size: cover;
+    color: $white;
+}
+
+
+.order__container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.form__title{
+    color: $yellow;
+    margin: 0;
+
+    @include phone{
+        font-size: 50px;
+
+    }
+
+
+    
+}
+
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.form__content{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: left;
+    
+
+    @include tablet{
+        flex-direction: column;
+        width: 99%;
+
+    }
+
+    @include phone{
+        
+
+    }
+}
+
+.form__column{
+    margin-top: rem(16px);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @include tablet{
+        width: 100%;
+    }
+
+    @include phone{
+        width: 100%;
+    }
+
+}
+
+.form__row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: rem(20px);
+
+
+    @include phone{
+        
+        justify-content: center;
+    }
+    
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin: rem(0px) rem(16px) rem(0px) rem(5px);
+    width: 100%;
+
+
+}
+
+.floor{
+
+    @include phone{
+       display: none;
+    }
+
+}
+
+
+.form__input-title, .form__radio-title, .form__input-title, .form__chekbox-title{
+    font-size: rem(14px);    
+    font-weight: 300;
+
+}
+
+
+.form__input-text{
+    margin-top: rem(5px);
+    width: 100%;
+    height: rem(29px);
+    outline: none;
+    border: rem(2px) solid #d1cfcb;
+    border-radius: rem(5px);
+    padding-left: 15px;
+    box-sizing: border-box;
+
+
+    &:focus{
+        border-color: $yellow;
+    }
+    
+}
+
+.form__big-text{
+    width: 100%;
+    height: rem(102px);
+    outline: none;
+    border-radius: rem(5px);
+    resize: none;
+    margin-top: rem(7px);
+    border: rem(2px) solid #d1cfcb;
+
+    &:focus{
+        border-color: $yellow;
+    }
+}
+
+.form__controls, .form__controls-trigger{
+    display: flex;
+    flex-direction: row;
+    margin-left: rem(3px);
+
+    @include phone{
+        margin-top: rem(5px);
+       
+    }
+
+}
+
+label.form__radio-title {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: rem(25px);
+    margin-right: rem(15px);
+    font-size: rem(14px);
+    
+    }
+
+    label.form__checkbox-title {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: rem(25px);
+        margin-right: rem(15px);
+        font-size: rem(14px);
+        margin-left: rem(5px);
+        margin-top: rem(5px);
+        
+        }    
+    
+.form__radio, .form__checkbox {
+    display: none;
+
+
+    
+}
+
+label.form__radio-title:before {
+    content: '';
+   
+  
+    display: inline-block;
+    background-color: white;
+    width: rem(10px);
+    height: rem(10px);
+    margin-right: rem(10px);
+    position: absolute;
+    left: 0;
+    bottom: rem(1px);
+    border: rem(2px) solid transparent;
+    border-radius: 50%;
+    
+    }
+
+    input.form__radio:focus + label.form__radio-title:before{
+        border: rem(2px) solid $orange;
+        
+    }    
+
+ input.form__radio:checked + label.form__radio-title:before {
+    background-image: url('../images/orders/ellipse.png');
+        
+        }
+
+
+
+label.form__checkbox-title:before {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(10px);
+    position: absolute;
+    left: 0;
+    bottom: rem(1px);
+    border: rem(2px) solid transparent;
+    
+       
+    }
+
+    input.form__checkbox:checked + label.form__checkbox-title:before {
+        background-image: url('../images/orders/check.png');
+        
+        }        
+    
+        .visually-hidden{
+            position: absolute !important;
+              clip: rect(rem(1px), rem(1px), rem(1px), rem(1px));
+              padding:0 !important;
+              border:0 !important;
+              height: rem(1px) !important; 
+              width: rem(1px) !important; 
+              overflow: hidden;
+          }
+
+.form__btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+    @include phone{
+        margin-top: 3.64286rem;
+    }
+}
+
+
+.form__btns-send{
+    display: block;
+    color: $white;
+    font-weight: 400;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    background-color: $orange;
+    padding: rem(10px) rem(16px) rem(10px) rem(16px);
+    border: rem(0px);
+    margin-left: rem(10px);
+     
+        &:hover{
+            background-color: #c1401e;
+        }
+}
+
+.form__btns-clear{
+    display: block;
+    color: $white;
+    font-weight: 400;
+    font-size: rem(13px);
+    background-color: transparent;
+    margin-left: rem(19px);
+    padding: 0;
+    border: rem(0px);
+}

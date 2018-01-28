@@ -1,7 +1,15 @@
 //CONFIG//
 
+@import "config/media.scss";
+
 @import "config/_variables.scss";
 @import "config/_mixins.scss";
+
+//RESOLUTION//
+
+$tablet: 768px;
+$phone: 480px;
+
 
 //LAYOUT//
 
@@ -26,3 +34,7 @@
 @import "section/menu.scss";
 
 @import "section/review.scss";
+
+@import "section/order.scss";
+
+@import "section/map.scss";

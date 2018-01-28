@@ -1,6 +1,6 @@
 ul.review__list{
-    display: -webkit-flex; 
-    -webkit-justify-content: flex-start;
+    
+    
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -8,13 +8,17 @@ ul.review__list{
     height: 100%;
     width: 100%;
 
+
+        
 }  
 
   ul.review__list li{
-    display: -webkit-flex; 
-    -webkit-justify-content: flex-start;
+    
+    
     display: flex;
     justify-content: center;
+
+
     
    
 
@@ -25,6 +29,11 @@ li.review__item{
     height: 50%;
     position: relative;
     filter: grayscale(100%); 
+
+    @include tablet{
+      width: 50%;  
+      height: 25%; 
+    }
     
 }
 
@@ -51,9 +60,21 @@ li.review__item{
 .review__content{
     display: none;
     position: absolute;
-    padding: 47px 20px 0px 20px;
+    padding: rem(47px) rem(20px) rem(0px) rem(20px);
     text-align: left;
     color: $white;
+
+    @include tablet{
+        padding: rem(20px) rem(20px) rem(0px) rem(20px);
+        
+      }
+    
+    
+
+    @include phone{
+        padding: rem(37px) rem(20px) rem(0px) rem(20px);
+        align-items: center;
+      }
     
     
 }
@@ -66,32 +87,81 @@ li.review__item:hover div.review__content{
     height: 100%;
     box-sizing: border-box;
 
+    @include tablet{
+        text-align: center;
+        align-items: center;
+    }
+
+    @include phone{
+        justify-content: center;
+    }
+
 }
 
 .review__content-title{
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
+
+    
+
+    
+
+    @include phone{
+        font-size: rem(24px);
+    }
 }
 
 .review__content-text{
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    margin-top: 19px;
-    line-height: 24px;
+    margin-top: rem(19px);
+    line-height: rem(24px);
+
+    @include tablet{
+        line-height: rem(22px);
+       
+       
+      }
+
+    @include phone{
+        display: none;
+    }
 }
 
 a.review__content-link{
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 400;
-    padding: 9px 16px 12px 16px;
+    padding: rem(9px) rem(16px) rem(12px) rem(16px);
     background-color: $dark;
-    border-radius: 5px;
+    border-radius: rem(5px);
     text-transform: uppercase;
-    margin-top: 14px;
+    margin-top: rem(14px);
     color: $white;
     
     &:hover{
         background-color: $darken;
+    }
+
+    @include phone{
+        content: 'читать отзыв';
+        margin-top: rem(28px);
+    }
+
+    p.display{
+        margin: 0;
+        display: block;
+        @include phone{
+            display: none;
+        }
+    }
+
+    p.phone{
+        margin: 0;
+        display: none;
+        @include phone{
+            display: block;
+        }
+
     }
     
 }

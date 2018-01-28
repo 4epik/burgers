@@ -1,48 +1,125 @@
-.second{
-    background: url('../images/bg/bg_second_page.jpg') 0 0 no-repeat; 
+.best{
+    background: url('../images/bg/bg_best_page.jpg') 0 0 no-repeat; 
     
      background-size: cover;
 }
 
-.second__container{
-    display: -webkit-flex; 
+.best__container{
+    
     display: flex;
     justify-content: center;
     height: 100%;
+
+
+    @include phone{
+        align-items: center;
+    }
 }
 
 
 
-ul.second__list{
-    display: -webkit-flex; 
-    -webkit-justify-content: flex-start;
+ul.best__list{
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
+    @include phone{
+        flex-direction: column;
+        width: 90%;
+        
+    }
 }
-li.second__item{
-    width: 300px;
-    margin: -6px 10px 0px 10px;
+
+.best__title{
+
+    @include phone{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
 }
 
 
 
 
-.second__item-title{
+li.best__item{
+    width: rem(300px);
+    margin: rem(-6px) rem(10px) rem(0px) rem(10px);
+    text-align: center;
+
+    @include phone{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+.best__item-img{
+    display: inline-block;
+    width: rem(99px);
+    height: rem(91px);
+}
+
+
+.best__item-icon{
+    
+    width: 100%;
+    height: 100%;
+
+    @include phone{
+        width: rem(99px);
+        height: rem(91px);
+    }
+}
+
+.meat{
+    fill: $meat;
+}
+
+.hand{
+    fill: $hand;
+}
+
+.natural{
+    fill: $natural;
+}
+
+.best__item-content{
+
+    @include phone{
+        margin: rem(-0px) rem(0px) rem(0px) rem(25px);
+    }
+}
+
+
+.best__item-title{
     font-family: 'lifehackmedium';
-    font-size: 24px;
+    font-size: rem(24px);
     color: $dark;
-    margin-top: 23px;
-    letter-spacing: -0.6px;
+    margin-top: rem(23px);
+    letter-spacing: rem(-0.6px);
+
+    @include phone{
+        text-align: left;
+    }
 }
 
-.second__item-text{
+.best__item-text{
     opacity: 0.8;
     text-align: center;
     font-weight: 300;
-    margin-top: 12px;
-    letter-spacing: -1px;
-    line-height: 24px;
+    margin-top: rem(12px);
+    letter-spacing: rem(-1px);
+    line-height: rem(24px);
+
+    @include phone{
+        text-align: left;
+        margin-top: 24px;
+    }
    
 }

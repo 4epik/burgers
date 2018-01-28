@@ -4,3 +4,10 @@
     border-radius: $width/2;
     background-color: #ffffff;
   }
+
+  @mixin line($width, $height, $color) {
+    width: $width;
+    height: $height;
+    border-radius: $width/2;
+    background-color: #ffffff;
+  }

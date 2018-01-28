@@ -1,17 +1,18 @@
-ul.pagination__item{
+ul.pagination{
     left: 95%;
     top: 10%;
     position: fixed;
     color: $white;
-    font-size: 16px;
+    font-size: rem(16px);
+    z-index: 500;
 }
 
 li.pagination__list{
-   width: 16px;
-   height: 16px;
-   margin-top: 3px;
+   width: rem(16px);
+   height: rem(16px);
+   margin-top: rem(3px);
    border-radius: 50%;
-   border: 1px solid transparent ;
+   border: rem(1px) solid transparent ;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -19,11 +20,11 @@ li.pagination__list{
    
 
    &:hover{
-    border: 1px solid #ffffff ;
+    border: rem(1px) solid #ffffff ;
    }
 
    &:active{
-    border: 1px solid #ffffff ;
+    border: rem(1px) solid #ffffff ;
    }
    
 }
@@ -32,9 +33,9 @@ li.pagination__list{
     
     content:'';
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    @include circle(6px, #ffffff);
+    width: rem(16px);
+    height: rem(16px);
+    @include circle(rem(6px), #ffffff);
     
 }
 

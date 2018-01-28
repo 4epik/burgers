@@ -1,5 +1,243 @@
-.team-section{
+.team{
     background: url('../images/bg/bg_team_page.jpg') 0 0 no-repeat; 
-    
+    color: $white;
      background-size: cover;
+     box-sizing: border-box;
+     position: relative;
+     text-align: right;
+
   }
+
+
+.team__container{
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 50%;
+  background: rgba(0,0,0,0.6);
+  //box-sizing: border-box;//
+  height: 100%;
+  
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include tablet{
+    width: 100%;
+    left: 0%;
+    
+  }
+}
+
+h2.team__title{
+  color: $yellow;
+
+  @include tablet{
+    font-size: 72px;
+  }
+
+
+  @include phone{
+    font-size: 50px;
+  }
+
+}
+
+.accordeon{
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  top: 5%;
+  
+  
+  
+}
+
+ul.accordeon__list{
+  margin-top: rem(-22px);
+  
+}
+
+ul.accordeon__list li{
+  text-align: left;
+  font-size: rem(14px);
+  
+  @include tablet{
+    text-align: center;
+  }
+
+
+}
+
+
+
+li.accordeon__item{
+  margin-bottom: rem(16px);
+
+  
+ 
+
+}
+
+.accordeon__block{
+ // background: url('../images/team/down.svg') 0 0 no-repeat;//
+  //background-position: left;//
+  //display: flex;//
+ // align-items: center;//
+  vertical-align: middle;
+  
+  
+}
+
+.accordeon__link{
+  display: inline-block;
+  margin-left: rem(18px);
+  text-decoration: none;
+  font-family: 'gagalinregular';
+  
+  
+  color: $white;
+
+  &:hover{
+    color: $yellow;
+  }
+
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: rem(5px) solid transparent;
+    border-top-color: $yellow;
+    margin-bottom: rem(-1px);
+    
+    @include tablet{
+      font-size: 24px;
+      border: rem(4px) solid transparent;
+      border-top-color: $yellow;
+      
+    }
+
+    
+  }
+
+  @include tablet{
+    font-size: 24px;
+    
+  }
+  
+  @include phone{
+    font-size: 24px;
+  }
+
+}
+
+
+.accordeon__content{
+  margin-top: rem(17px);
+  margin-left: rem(18px);
+  height: 0;
+  overflow: hidden;
+  display: flex;
+
+    @include tablet{
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-bottom: 13px;
+    }
+
+    @include phone{
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-bottom: 35px;
+    }
+
+
+
+}
+
+
+
+
+
+.accordeon__content-avatar{
+  background-size: cover;
+  background-position: center;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  
+  overflow: hidden;
+  
+
+}
+
+.accordeon__content-img{
+  display: none;
+  position: relative;
+  left: -18%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+}
+
+.accordeon__content-block{
+  width: rem(212px);
+  line-height: rem(11px);
+
+  @include tablet{
+    margin-top: rem(10px);
+    white-space: 80%;
+    width: 75%;
+  }
+
+  @include phone{
+    margin-top: 28px;
+    width: 100%;
+  }
+}
+
+
+.accordeon__content-title{
+  font-weight: 500;
+  margin-left: rem(11px);
+  
+}
+
+.accordeon__content-text{
+  font-weight: 300;
+  margin-left: rem(10px);
+  margin-top: rem(17px);
+  line-height: rem(26px);
+
+}
+
+
+.block-active{
+  //background: url('../images/team/up.svg') 0 0 no-repeat;//
+ // background-position: left;//
+  
+  .accordeon__link{
+    color: $yellow;
+
+    &:before{
+      transform: rotate(180deg);
+
+
+      @include tablet{
+        border: rem(4px) solid transparent;
+        border-bottom-color: $yellow;
+      }
+      
+    }
+  }
+}
+
+.content-active{
+  height: 100%;
+}

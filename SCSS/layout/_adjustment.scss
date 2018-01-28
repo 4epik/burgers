@@ -1,6 +1,6 @@
 .wrapper{
     overflow: hidden;
-    min-width: 1100px;
+    width: 100%;
     min-height: 100%;
     text-align: center;
     display: flex;
@@ -9,21 +9,33 @@
 }
 
 .section{
-    min-height: 650px;
+    
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-h1{
+h2{
     font-family: 'gagalinregular';
-    font-size: 72px;
+    font-size: rem(72px);
+
+    @include tablet{
+        font-size: 63px;
+
+    }
+
+    @include phone{
+        font-size: 50px;
+        
+    }
 
 }
 .container{
-    min-height: 650px;
-    width: 100vw;
+    display: flex;
+   // max-height: 650%;//
+    max-width: 940px;
+    width: 95%;
     height: 100vh;
     flex-direction: column;
     
@@ -32,10 +44,10 @@ h1{
 
 .visually-hidden{
     position: absolute !important;
-      clip: rect(1px, 1px, 1px, 1px);
+      clip: rect(rem(1px), rem(1px), rem(1px), rem(1px));
       padding:0 !important;
       border:0 !important;
-      height: 1px !important; 
-      width: 1px !important; 
+      height: rem(1px) !important; 
+      width: rem(1px) !important; 
       overflow: hidden;
   }
