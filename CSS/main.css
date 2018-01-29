@@ -340,6 +340,9 @@ a.scroll__link {
     margin: -0.71429rem 0rem 0rem -0.85714rem;
     position: absolute; }
 
+.burger__title, .review__title, .map__title {
+  display: none; }
+
 .best {
   background: url("../images/bg/bg_best_page.jpg") 0 0 no-repeat;
   background-size: cover; }
