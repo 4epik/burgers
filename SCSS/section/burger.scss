@@ -4,3 +4,291 @@
     
     
   }
+
+  .burger__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: rem(1100px);
+    justify-content: center;
+  }
+
+  h2.burger__title{
+    color: $white;
+    
+    margin-bottom: 0;
+    line-height: rem(68px);
+
+    @include tablet{
+      margin-top: 0;
+    }
+  }
+
+
+  .burger__arrow{
+    display: inline-block;
+   padding-bottom: rem(80px);
+   width: rem(24px);
+   height: rem(40px);
+
+   @include tablet{
+    padding-bottom: 0; 
+   }
+
+   @include phone{
+       height: 2.14286rem;
+
+   }
+
+   @include phone_mini{
+       padding-bottom: rem(6px);
+   }
+   
+}
+
+.left{  
+  transform: rotate(90deg);
+
+}
+
+.right{  
+  transform: rotate(-90deg);
+
+}
+
+a.burger__arrow-link{
+   width: 100%;
+   height: 100%;
+
+}
+
+
+
+
+.burger__arrow-scroll{
+   fill: $white;
+   width: 100%;
+   height: 100%;
+}
+
+
+ul.burger__list{
+  display: flex;
+  flex-direction: row;
+  margin: rem(0px) rem(67px) rem(0px) rem(67px);
+  height: 71%;
+
+  @include tablet{
+    width: 69%;
+    margin-top: 42px;
+  }
+
+  @include phone{
+    width: 90%;
+    margin-top: rem(42px);
+    margin-left: 0px;
+    margin-right: 0px; 
+  }
+
+  
+}
+
+li.burger__item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include tablet{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.burger__column-left{
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  @include tablet{
+    height: 50%;
+  }
+
+    .burger__img{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+  }
+
+  .burger__composition{
+    background-color: #f08c33;
+    display: block;
+    position: absolute;
+    top: rem(-5px);
+    left: rem(-3px);
+    width: rem(50px);
+    height: rem(70px);  
+    padding: rem(11px) rem(20px) rem(11px) rem(20px);
+    border-radius: 5px;
+
+    @include tablet{
+      left: rem(6px);
+      top: rem(-90px);
+    }
+
+    @include phone{
+      top: rem(-90px);
+      left: rem(-19px);
+    }
+
+
+    .burger__composition-link{
+      color: $white;
+      height: 100%;
+      width: 100%;
+      font-family: 'gagalinregular';
+      font-size: rem(14px);
+
+
+      .burger__composition-icon{
+        fill: $white;
+        width: 100%;
+        height: 70%;
+      }
+    }
+  }
+
+  .burger__kkal{
+    display: block;
+    position: absolute;
+    bottom: rem(1px);
+    left: rem(-5px);
+    width: rem(64px);
+    height: rem(80px);
+    line-height: rem(4px);
+
+    @include tablet{
+      top: rem(-95px);
+      right: rem(17px);
+      left: auto;
+    }
+
+    @include phone{
+      top: rem(-95px);
+      right: rem(-19px);
+    }
+
+    .burger__kkal-link{
+      color: $white;
+      font-family: 'gagalinregular';
+      font-size: rem(14px);
+      width: 100%;
+      height: 100%;
+      
+      .burger__kkal-text{
+        font-size: rem(20px);
+      }
+
+      .burger__kkal-icon{
+        fill: $white;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+
+.burger__column-right{
+  margin-left: rem(30px);
+  text-align: left;
+
+  @include tablet{
+    height: 50%;
+    text-align: center;
+    margin-top: rem(16px);
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .burger__text{
+    
+    color: $white;
+    line-height: rem(22px);
+    margin-top: rem(42px);
+
+    @include tablet{
+      margin-top: 0px;
+    }
+
+    @include phone{
+      margin-top: 0px;
+    }
+    
+  }
+
+
+  .burger__content{
+    display: flex;
+    align-items: baseline;
+    margin-top: rem(18px);
+
+    @include tablet{
+      margin-top: 0px;
+    }
+    
+    
+
+    .burger__price{
+        font-family: 'gagalinregular';
+        color: $orange;
+        display: flex;
+        align-items: baseline;
+
+      .burger__price-cost{
+        font-size: rem(71px);
+        
+      }
+    
+      .burger__price-text{
+        font-size: rem(30px);
+        margin-left: rem(4px);
+      }  
+
+    }
+  }
+}
+
+
+.burger__order-btns{
+  margin-left: rem(24px);
+
+
+a.burger__order-link{
+  display: block;
+  color: $white;
+  font-weight: 400;
+  font-size: rem(13px);
+  text-transform: uppercase;
+  border-radius: rem(5px);
+  background-color: $orange;
+  padding: rem(10px) rem(16px) rem(10px) rem(16px);
+  border: rem(0px);
+   
+      &:hover{
+          background-color: #c1401e;
+      }
+  }
+
+}

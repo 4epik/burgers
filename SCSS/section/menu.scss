@@ -2,22 +2,28 @@
     background: url('../images/bg/bg_menu_page.jpg') 0 0 no-repeat; 
     background-size: cover;
     color: $white;
-   
 
-  }
-
-
-  .menu__container{
     text-align: left;
     font-size: 0;
     position: relative;
     display: flex;
     max-width: 100%;
+
   }
 
+
+ /* .menu__container{
+    text-align: left;
+    font-size: 0;
+    position: relative;
+    display: flex;
+    max-width: 100%;
+  } */
+
   h2.menu__title{
-    margin-top: rem(97px);
-    margin-left: rem(98px);
+    position: absolute;
+    top: 0;
+    left: 7%;
   }
 
 h2.menu__title, ul.menu__accordeon{

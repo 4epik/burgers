@@ -1,11 +1,15 @@
 .map{
-    background: url('../images/bg/bg_map_page.jpg') 0 0 no-repeat; 
+   // background: url('../images/bg/bg_map_page.jpg') 0 0 no-repeat; //
     
     background-size: cover;
     color: $white;
     position: relative;
+    width: 100%;
+    
     
 }
+
+
 
 
 
@@ -24,7 +28,7 @@ footer{
     z-index: 100;
 
     @include phone{
-        height: 115px;
+        height: rem(115px);
     }
 }
 
@@ -132,6 +136,12 @@ li.footer__network-item{
     @include phone{
         margin-top: rem(21px);
     }
+}
+
+.footer__network-link{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .footer__network-icon{

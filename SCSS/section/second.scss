@@ -33,11 +33,13 @@ ul.best__list{
 
 .best__title{
 
-    @include phone{
-        font-size: 50px;
-        margin-bottom: 5px;
-    }
-}
+   @include phone{
+        
+        margin-bottom: rem(5px);
+    }  
+
+    
+} 
 
 
 
@@ -52,7 +54,7 @@ li.best__item{
         align-items: center;
         width: 100%;
         margin: 0;
-        margin-top: 20px;
+        margin-top: rem(20px);
     }
 }
 
@@ -119,7 +121,7 @@ li.best__item{
 
     @include phone{
         text-align: left;
-        margin-top: 24px;
+        margin-top: rem(24px);
     }
    
 }

@@ -60,7 +60,7 @@ li.review__item{
 .review__content{
     display: none;
     position: absolute;
-    padding: rem(47px) rem(20px) rem(0px) rem(20px);
+    padding: rem(47px) rem(20px) rem(10px) rem(20px);
     text-align: left;
     color: $white;
 
@@ -112,10 +112,15 @@ li.review__item:hover div.review__content{
 }
 
 .review__content-text{
-    font-size: rem(14px);
+  //  font-size: rem(14px);//
     font-weight: 300;
     margin-top: rem(19px);
     line-height: rem(24px);
+   
+
+    @include notebook{
+        line-height: rem(15px);
+    }
 
     @include tablet{
         line-height: rem(22px);

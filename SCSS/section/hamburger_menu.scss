@@ -1,0 +1,87 @@
+.overlay {
+   display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 50, 52, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    height: 0;
+    overflow: hidden;
+  }
+  
+ .overlay__container {
+    position: relative;
+    max-width: 940px;
+    width: 98%;
+    height: 99%;
+  }
+  
+  .overlay__content {
+    width: 400px;
+    
+    padding: 10px;
+    color: #fff;
+    font: 16px Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .close {
+    //background: url('../images/x.png') no-repeat;//
+    white-space: 23px;
+    height: 23px;
+    font-size: rem(40px);
+    color: #fff;
+    position: absolute;
+    right: rem(25px);
+    top: rem(25px);
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  #overlay__menu{
+   text-align: center;
+    font-size: rem(24px);
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    margin: 0;
+
+    
+}
+  
+
+  #overlay__menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: rem(16px) rem(0px) rem(0px) rem(0px);
+
+
+
+   &:after{
+      display: block;
+      vertical-align: middle;
+       content: ' ';
+       @include circle(rem(5px), #ffffff);
+       
+       margin-top: rem(16px);
+  
+      
+   
+   }
+
+   &:last-child:after{
+       display: none;
+       
+   }
+   
+   
+
+}

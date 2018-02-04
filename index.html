@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     
     <link rel="stylesheet" href="CSS/main.css">
+
+   
+    
     <title>Burgers</title>
 </head>
 <body>
@@ -25,14 +28,14 @@
                             </a>
 
                 </div>
-                <ul class="menu__list">
-                    <li class="menu__item">
+                <ul class="menu__list" >
+                    <li class="menu__item" >
                         <a href="" class="menu__item-link">о нас</a>
                     </li>
                     <li class="menu__item">
                             <a href="" class="menu__item-link">бургеры</a>
                     </li>
-                   <li class="menu__item">
+                   <li class="menu__item" >
                         <a href="" class="menu__item-link">команда</a>
                     </li>
                     <li class="menu__item">
@@ -41,16 +44,49 @@
                     <li class="menu__item">
                             <a href="" class="menu__item-link">отзывы</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item" >
                             <a href="" class="menu__item-link">контакты</a>
                     </li>
                 </ul>
                 <div class="menu__btns">
                     <a href="" class="menu__link">заказать</a>
                 </div>
-                <div class="burger">
-                    <a href="#" class="burger-link"></a>
+                <div class="hamburger">
+                    <a href="#" id="openOverlay" class="hamburger-link">
+                        <svg class="hamburger__icon" >
+                            <use xlink:href="sprite.svg#hamburger"></use>
+                        </svg>
+                    </a>
                 </div>
+            <div class="overlay">    
+                <div id="header__logo">
+                    <a href="index.html" class="header__logo-link">
+                            <img src="images/burger_logo.png" class="header__logo-img" alt="BURGER">
+                        </a>
+
+                </div>
+                <ul  id="overlay__menu">
+                    <li  id="overlay__menu-item">
+                        <a href="" class="menu__item-link">о нас</a>
+                    </li>
+                    <li  id="overlay__menu-item">
+                            <a href="" class="menu__item-link">бургеры</a>
+                    </li>
+                     <li  id="overlay__menu-item">
+                        <a href="" class="menu__item-link">команда</a>
+                    </li>
+                    <li id="overlay__menu-item">
+                            <a href="" class="menu__item-link">меню</a>
+                    </li>
+                    <li  id="overlay__menu-item">
+                            <a href="" class="menu__item-link">отзывы</a>
+                    </li>
+                    <li  id="overlay__menu-item">
+                            <a href="" class="menu__item-link">контакты</a>
+                    </li>
+                </ul>
+             </div> 
+                <script src="js/menu.js"></script>    
 
                 
             </header>
@@ -58,9 +94,9 @@
                 <div class="content__photo">
                         <img src="images/first/burger_first_page.png" alt="avatar" class="content__img">
                 </div>
-                <div class="content__text">
+                <div class="content__box">
                     <h2 class="content__text-title">мы делаем</h2>
-                    <div class="content__text-text">натуральные<br>бургеры</div>
+                    <div class="content__text">натуральные<br>бургеры</div>
                 </div>
             </div>
             <div class="scroll">
@@ -119,8 +155,58 @@
         </div>
         </section>
         <section class="section burgers">
-                <h2 class="burger__title">мы делаем</h2>
                 
+            <div class="container burger__container">
+                <div class="burger__arrow left">
+                    <a href="#" class="burger__arrow-link">
+                        <svg class="burger__arrow-scroll" >
+                            <use xlink:href="sprite.svg#arrow-scroll"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="burger__list">
+                    <li class="burger__item">
+                        <div class="burger__column-left">
+                            <img src="images/burgers/1.png" class="burger__img">
+                            <div class="burger__composition">
+                                <a href="#" class="burger__composition-link">
+                                    <svg class="burger__composition-icon" >
+                                        <use xlink:href="sprite.svg#burger"></use>
+                                    </svg>
+                                    состав
+                                </a>
+                            </div>
+                            <div class="burger__kkal">
+                                <a href="#" class="burger__kkal-link">
+                                    <svg class="burger__kkal-icon" >
+                                        <text x="14" y="52" class="burger__kkal-text">1200</text>
+                                        <use xlink:href="sprite.svg#kkal"></use>
+                                        
+                                    </svg>
+                                    ккал
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger__column-right">
+                            <h2 class="burger__title">dark beef burger</h2>
+                            <div class="burger__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                            <div class="burger__content">
+                                <div class="burger__price"><p class="burger__price-cost">500</p><p class="burger__price-text">рублей</p></div>
+                                <div class="burger__order-btns">
+                                        <a href="" class="burger__order-link">заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="burger__arrow right">
+                        <a href="#" class="burger__arrow-link">
+                            <svg class="burger__arrow-scroll" >
+                                <use xlink:href="sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </a>
+                </div>
+            </div>
         </section>
         <section class="section team">
             <div class="container team__container">
@@ -424,7 +510,9 @@
         </form>
         </div>       
         </section>
-        <section class="section map">
+        <section  class="section map" id="map">
+                
+            
                 <h2 class="map__title">мы делаем</h2>
             <footer  class="footer"> 
                     <div class="footer__content">
@@ -443,24 +531,24 @@
                         </div>
                         <ul class="footer__network">
                             <li class="footer__network-item">
-                                <svg class="footer__network-icon" >
-                                    <use xlink:href="sprite.svg#vk"></use>
-                                </svg>
+                                    <svg class="footer__network-icon" >
+                                        <use xlink:href="sprite.svg#vk"></use>
+                                    </svg>
                             </li>
                             <li class="footer__network-item">
-                                <svg class="footer__network-icon" >
-                                    <use xlink:href="sprite.svg#fb"></use>
-                                </svg>
+                                    <svg class="footer__network-icon" >
+                                        <use xlink:href="sprite.svg#fb"></use>
+                                    </svg>
                             </li>
                             <li class="footer__network-item">
-                                <svg class="footer__network-icon" >
-                                    <use xlink:href="sprite.svg#inst"></use>
-                                </svg>
+                                    <svg class="footer__network-icon" >
+                                        <use xlink:href="sprite.svg#inst"></use>
+                                    </svg>
                             </li>
                             <li class="footer__network-item">
-                                <svg class="footer__network-icon" >
-                                    <use xlink:href="sprite.svg#twitter"></use>
-                                </svg>
+                                    <svg class="footer__network-icon" >
+                                        <use xlink:href="sprite.svg#twitter"></use>
+                                    </svg>
                             </li> 
                         </ul>
         
@@ -499,6 +587,11 @@
                 </li>
                 
             </ul> 
+
+
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+            </script>
+                <script src="js/map.js"></script>    
 
 </body>
 </html>

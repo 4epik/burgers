@@ -33,15 +33,15 @@ h2.team__title{
   color: $yellow;
 
   @include tablet{
-    font-size: 72px;
+     margin-top: 0;
   }
 
 
   @include phone{
-    font-size: 50px;
+    
   }
-
-}
+ 
+}   
 
 .accordeon{
   position: relative;
@@ -113,7 +113,7 @@ li.accordeon__item{
     margin-bottom: rem(-1px);
     
     @include tablet{
-      font-size: 24px;
+      font-size: rem(24px);
       border: rem(4px) solid transparent;
       border-top-color: $yellow;
       
@@ -123,12 +123,12 @@ li.accordeon__item{
   }
 
   @include tablet{
-    font-size: 24px;
+    font-size: rem(24px);
     
   }
   
   @include phone{
-    font-size: 24px;
+    font-size: rem(24px);
   }
 
 }
@@ -144,15 +144,15 @@ li.accordeon__item{
     @include tablet{
       align-items: center;
       flex-direction: column;
-      margin-left: 0px;
-      margin-bottom: 13px;
+      margin-left: rem(0px);
+      margin-bottom: rem(13px);
     }
 
     @include phone{
       align-items: center;
       flex-direction: column;
-      margin-left: 0px;
-      margin-bottom: 35px;
+      margin-left: rem(0px);
+      margin-bottom: rem(35px);
     }
 
 
@@ -197,7 +197,7 @@ li.accordeon__item{
   }
 
   @include phone{
-    margin-top: 28px;
+    margin-top: rem(28px);
     width: 100%;
   }
 }
