@@ -36,7 +36,7 @@ function openOverlay(content) {
 
   const image=document.createElement('img');
   
-  image.src='../images/x.png';
+  image.src='images/x.png';
   
  
   
