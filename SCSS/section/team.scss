@@ -80,15 +80,7 @@ li.accordeon__item{
 
 }
 
-.accordeon__block{
- // background: url('../images/team/down.svg') 0 0 no-repeat;//
-  //background-position: left;//
-  //display: flex;//
- // align-items: center;//
-  vertical-align: middle;
-  
-  
-}
+
 
 .accordeon__link{
   display: inline-block;
@@ -114,7 +106,7 @@ li.accordeon__item{
     
     @include tablet{
       font-size: rem(24px);
-      border: rem(4px) solid transparent;
+      border: rem(6px) solid transparent;
       border-top-color: $yellow;
       
     }
@@ -131,6 +123,17 @@ li.accordeon__item{
     font-size: rem(24px);
   }
 
+  &:active{
+    color: $yellow;
+
+    &:before{
+      transform: rotate(180deg);
+
+
+     
+    }
+  }
+
 }
 
 
@@ -138,8 +141,10 @@ li.accordeon__item{
   margin-top: rem(17px);
   margin-left: rem(18px);
   height: 0;
+  
   overflow: hidden;
   display: flex;
+  transition: 0.4s;
 
     @include tablet{
       align-items: center;
@@ -218,26 +223,23 @@ li.accordeon__item{
 }
 
 
-.block-active{
-  //background: url('../images/team/up.svg') 0 0 no-repeat;//
- // background-position: left;//
-  
-  .accordeon__link{
+
+  .accordeon__link.active{
     color: $yellow;
 
     &:before{
       transform: rotate(180deg);
 
 
-      @include tablet{
-        border: rem(4px) solid transparent;
-        border-bottom-color: $yellow;
-      }
       
     }
   }
+
+
+
+.content:active{
+  
+    height: 100%;
+  
 }
 
-.content-active{
-  height: 100%;
-}

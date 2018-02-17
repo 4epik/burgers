@@ -1,0 +1,43 @@
+.overlay__order-container{
+    position: relative;
+    max-width: 940px;
+    width: 98%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.overlay__order-content{
+    width: rem(200px);
+    height: rem(107px);
+    background-color: white;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+.overlay__close{
+    display: block;
+    color: $white;
+    font-weight: 400;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    background-color: $orange;
+    padding: rem(10px) rem(16px) rem(10px) rem(16px);
+    border: rem(0px);
+    width: rem(97px);
+     
+        &:hover{
+            background-color: #c1401e;
+        }
+    
+}

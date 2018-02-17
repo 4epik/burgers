@@ -1,0 +1,76 @@
+.overlay__review-container{
+    position: relative;
+    max-width: 940px;
+    width: 98%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.overlay__review-content{
+    width: rem(459px);
+    height: rem(254px);
+    background-color: white;
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    text-align: left;
+    padding: rem(25px) rem(20px) rem(10px) rem(20px);
+    box-sizing: border-box;
+    align-items: baseline;
+}
+
+.overlay__review-title{
+    font-family: 'gagalinregular';
+    font-size: rem(14px);
+
+ 
+
+    
+
+    @include phone{
+        font-size: rem(24px);
+    }
+}
+
+.overlay__review-text{
+//  font-size: rem(14px);//
+font-weight: 300;
+margin-top: rem(19px);
+line-height: rem(24px);
+
+
+@include notebook{
+    line-height: rem(15px);
+}
+
+@include tablet{
+    line-height: rem(22px);
+   
+   
+  }
+
+
+}
+
+
+.overlay__reviev-close{
+    position: absolute;
+    top: 17px;
+    right: 3px;
+    display: block;
+    color: $red;
+    
+    height: rem(30px);
+    width: rem(30px);
+     
+        
+    
+}

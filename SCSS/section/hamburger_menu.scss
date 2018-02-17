@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    height: 0;
+   
     overflow: hidden;
   }
   
@@ -21,7 +21,7 @@
   }
   
   .overlay__content {
-    width: 400px;
+    
     
     padding: 10px;
     color: #fff;
@@ -43,7 +43,7 @@
   }
 
 
-  #overlay__menu{
+  .overlay__menu{
    text-align: center;
     font-size: rem(24px);
     position: absolute;
@@ -57,7 +57,7 @@
 }
   
 
-  #overlay__menu-item{
+  .overlay__menu-item{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,53 @@
+.burger__composition:hover .burger__composition-list{
+    left: 90px;
+}
+
+
+
+.burger__composition-list{
+    width: 271px;
+    height: 333px;
+    background-color: $white;
+    opacity: 0.8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 9999px;
+    z-index: 9999;
+
+
+    .burger__composition-item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .burger__composition-img{
+            width: 45px;
+            height: 45px;
+
+            .burger__composition-avatar{
+                width: 100%;
+                height: 100%;
+            }
+
+            
+        }
+
+        .burger__composition-ingredient{
+            font-weight: 500;
+            margin-left: 21px;
+        }
+        
+        .burger__composition-weight{
+            font-weight: 300;
+            margin-left: 50px;
+        }
+    }   
+
+}

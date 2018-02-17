@@ -141,6 +141,8 @@
     resize: none;
     margin-top: rem(7px);
     border: rem(2px) solid #d1cfcb;
+    padding-left: 10px;
+    padding-top: 8px;
 
     &:focus{
         border-color: $yellow;

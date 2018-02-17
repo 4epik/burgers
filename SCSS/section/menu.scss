@@ -69,7 +69,7 @@ ul.menu__accordeon li{
 li.menu__accordeon-item{
   height: 100%;
   display: flex;
-  
+  background: rgba(0,0,0,0.5);
 
   
 }
@@ -81,7 +81,7 @@ li.menu__accordeon-item{
 
 
 
-.menu__accordeon-title{
+/*.menu__accordeon-title{
   
   background: rgba(0,0,0,0.5);
   font-family: 'gagalinregular';
@@ -92,12 +92,12 @@ li.menu__accordeon-item{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+  */
 
   
   
 
-  a.title__text{
+  .title__text{
     color: $white;
     text-decoration: none;
     //display: inline-block;//
@@ -109,12 +109,16 @@ li.menu__accordeon-item{
     bottom: -24%;
     right: 23%; */
     transform: scale(-1, -1);
+    background: rgba(0,0,0,0.5);
+    font-family: 'gagalinregular';
+    font-size: rem(40px);
+    padding: 10px 17px 10px 17px;
     
     
   }
 
   
-}
+
 
 
 
@@ -124,14 +128,29 @@ li.menu__accordeon-item{
   height: 100%;
   font-weight: 300;
   font-size: rem(14px);
-  
+  transition: 0.4s;
   width: 0;
   overflow: hidden;
+
+ 
+
+}
+
+.menu__accordeon-text.active{
+ 
+    width: rem(540px);
+    padding: rem(61px) rem(35px) rem(0px) rem(35px);
+    box-sizing: border-box;
+  
+     @include tablet{
+        width: 100%;
+    
+  }
   
 
 }
 
-.text-active{
+/*.menu__accordeon:active{
   width: rem(540px);
   padding: rem(61px) rem(35px) rem(0px) rem(35px);
   box-sizing: border-box;
@@ -140,3 +159,5 @@ li.menu__accordeon-item{
       width: 100%;
    }
 }
+
+*/
