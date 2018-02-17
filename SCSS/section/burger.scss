@@ -27,6 +27,9 @@
      width: 71%;
      height: 90%;
    }
+   @include phone{
+     width: 80%;
+   }
 
   }
 
@@ -141,7 +144,7 @@
   }
 
   @include phone{
-    width: 90%;
+    width: 100%;
     margin-top: rem(42px);
     margin-left: 0px;
     margin-right: 0px; 
@@ -164,6 +167,10 @@ li.burger__item{
     height: 90%;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @include phone{
+    height: 80%;
   }
 }
 
@@ -207,7 +214,7 @@ li.burger__item{
 
     @include phone{
       top: rem(-90px);
-      left: rem(-19px);
+      left: 0;
     }
 
 
@@ -244,7 +251,7 @@ li.burger__item{
 
     @include phone{
       top: rem(-95px);
-      right: rem(-19px);
+      right: 0;
     }
 
     .burger__kkal-link{

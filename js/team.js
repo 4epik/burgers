@@ -31,7 +31,9 @@ if (!item.classList.contains("active")) {
     contents[i].style.height = null;
   }
   
-  content.style.height = content.scrollHeight + "px";
+  content.style.height = content.scrollHeight + "px"; 
+
+  
   
 }
 
@@ -39,7 +41,7 @@ else {
   item.classList.remove("active");
   trigger.classList.remove("active");
  
-  content.style.height = null;
+ content.style.height = null;
 }
 }
 });

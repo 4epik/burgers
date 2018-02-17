@@ -34,14 +34,16 @@ function openOverlay(content) {
       const list = document.createElement("ul");
       contentElement.classList.add("overlay__menu");
       
-       var arrMenu = ["о нас", "бургеры", "команда", "меню", "отзывы", "контакты"] 
+       var arrMenu = ["о нас", "бургеры", "команда", "меню", "отзывы", "контакты"] ;
+       var arrNumber= [1, 2, 3, 4, 5, 7];
      
      for(var i = 0; i < arrMenu.length; i++){
+       for(var i = 0; i < arrNumber.length; i++){
       
-      
-        list.innerHTML += ('<li class="overlay__menu-item"><a href="#" class="menu__item-link">' + arrMenu[i] + '</a></li>');
+        list.innerHTML += ('<li class="overlay__menu-item"><a href="#" class="menu__item-link" data-scroll-to="' + arrNumber[i] + '">' + arrMenu[i] + '</a></li>');
         
-     
+        
+       }
        } 
        
      

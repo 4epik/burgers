@@ -160,7 +160,7 @@ li.accordeon__item{
       margin-bottom: rem(35px);
     }
 
-
+ 
 
 }
 
@@ -172,7 +172,7 @@ li.accordeon__item{
   background-size: cover;
   background-position: center;
   width: rem(100px);
-  height: rem(100px);
+  min-height: rem(100px);
   border-radius: 50%;
   
   overflow: hidden;
@@ -241,5 +241,5 @@ li.accordeon__item{
   
     height: 100%;
   
-}
+} 
 

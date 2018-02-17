@@ -7,7 +7,7 @@ ul.pagination{
     z-index: 500;
 }
 
-li.pagination__list{
+.pagination__list{
    width: rem(16px);
    height: rem(16px);
    margin-top: rem(3px);
@@ -17,16 +17,18 @@ li.pagination__list{
    justify-content: center;
    align-items: center;
 
-   
+  
 
    &:hover{
     border: rem(1px) solid #ffffff ;
    }
 
-   &:active{
-    border: rem(1px) solid #ffffff ;
-   }
+  
    
+}
+
+.pagination__list.active{
+    border: rem(1px) solid #ffffff ;
 }
 
 .pagination__link{
