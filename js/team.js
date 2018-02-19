@@ -1,4 +1,4 @@
-var accordion = document.getElementById("accordeon__list");
+var accordeon = document.getElementById("accordeon__list");
 var items = accordeon.getElementsByClassName("accordeon__item");
 var contents = accordeon.getElementsByClassName("accordeon__content");
 var triggers = accordeon.getElementsByClassName("accordeon__link");
@@ -6,7 +6,7 @@ var triggers = accordeon.getElementsByClassName("accordeon__link");
 var i;
 
 accordeon.addEventListener("click", function(e) {
-    event.preventDefault();
+    //event.preventDefault();//
 if (e.target.classList.contains("accordeon__link")) {
 var trigger = e.target;
 var content = trigger.nextElementSibling;

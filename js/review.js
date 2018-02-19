@@ -1,6 +1,7 @@
 
-const reviewOpen = document.querySelector(".review__content-link");
 
+//const review = document.getElementsByClassName(".review__content-link");//
+const reviewOpen = document.getElementsByClassName("review__content-link");
 
 
 
@@ -28,7 +29,7 @@ function open(content) {
   closeElement.textContent = " ";
   closeElement.href = "#";
   closeElement.addEventListener("click", function() {
-    event.preventDefault();
+   
     document.body.removeChild(overlayElement);
   });
 
@@ -54,14 +55,17 @@ closeElement.appendChild(image);
 
 
 
-reviewOpen.addEventListener("click", function() {
+
+
+
+for (i = 0; i < reviewOpen.length; i++) {
+ reviewOpen.addEventListener('click', function(){
+   const overlay = open('');
+   document.body.appendChild(overlay);
+   
+ });
+}
+
 
  
-  
-    event.preventDefault();
-    const overlay = open('');
-   
-        document.body.appendChild(overlay);
-
-      });
     
