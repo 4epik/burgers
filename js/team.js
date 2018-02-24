@@ -1,47 +1,47 @@
-var accordeon = document.getElementById("accordeon__list");
-var items = accordeon.getElementsByClassName("accordeon__item");
-var contents = accordeon.getElementsByClassName("accordeon__content");
-var triggers = accordeon.getElementsByClassName("accordeon__link");
+var accordeonElement = document.getElementById("accordeon__list");
+var itemsElement = accordeon.getElementsByClassName("accordeon__item");
+var contentsElement = accordeon.getElementsByClassName("accordeon__content");
+var triggersElement = accordeon.getElementsByClassName("accordeon__link");
 
 var i;
 
-accordeon.addEventListener("click", function(e) {
-    //event.preventDefault();//
+accordeonElement.addEventListener("click", function(e) {
+    e.preventDefault();
 if (e.target.classList.contains("accordeon__link")) {
-var trigger = e.target;
-var content = trigger.nextElementSibling;
-var item = trigger.parentNode;
+var triggerElement = e.target;
+var contentElement = triggerElement.nextElementSibling;
+var itemElement = triggerElement.parentNode;
 
 
-if (!item.classList.contains("active")) { 
+if (!itemElement.classList.contains("active")) { 
 
-  for (i = 0; i < items.length; i++) {
-    items[i].classList.remove("active");
+  for (i = 0; i < itemsElement.length; i++) {
+    itemsElement[i].classList.remove("active");
   }
   
 
-  item.classList.add("active");
+  itemElement.classList.add("active");
 
-  for (i = 0; i < triggers.length; i++) {
-    triggers[i].classList.remove("active");
+  for (i = 0; i < triggersElement.length; i++) {
+    triggersElement[i].classList.remove("active");
   }
-  trigger.classList.add("active");
+  triggerElement.classList.add("active");
  
-  for (i = 0; i < contents.length; i++) {
-    contents[i].style.height = null;
+  for (i = 0; i < contentsElement.length; i++) {
+    contentsElement[i].style.height = null;
   }
   
-  content.style.height = content.scrollHeight + "px"; 
+  contentElement.style.height = contentElement.scrollHeight + "px"; 
 
   
   
 }
 
 else { 
-  item.classList.remove("active");
-  trigger.classList.remove("active");
+  itemElement.classList.remove("active");
+  triggerElement.classList.remove("active");
  
- content.style.height = null;
+ contentElement.style.height = null;
 }
 }
 });

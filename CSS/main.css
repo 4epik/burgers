@@ -381,7 +381,11 @@ a.scroll__link {
   width: 98%;
   height: 99%; }
 
+.header__logo-overlay {
+  position: absolute; }
+
 .overlay__content {
+  height: 100%;
   padding: 10px;
   color: #fff;
   font: 16px Helvetica, sans-serif;
@@ -401,12 +405,17 @@ a.scroll__link {
 .overlay__menu {
   text-align: center;
   font-size: 1.71429rem;
-  position: absolute;
-  top: 28%;
-  left: 0;
-  right: 0;
-  bottom: 50%;
-  margin: 0; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .overlay__menu-item {
   display: -webkit-box;

@@ -59,7 +59,10 @@ closeElement.appendChild(image);
 
 
 for (i = 0; i < reviewOpen.length; i++) {
- reviewOpen.addEventListener('click', function(){
+  
+ reviewOpen[i].addEventListener('click', function(e){
+   e.preventDefault();
+
    const overlay = open('');
    document.body.appendChild(overlay);
    
