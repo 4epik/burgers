@@ -30,7 +30,7 @@ var ajaxForm = function (form) {
     
     return $.ajax({
         type: 'POST',
-        url: url,
+        url: '/order.php',
         dataType : 'JSON',
         data: data
     })

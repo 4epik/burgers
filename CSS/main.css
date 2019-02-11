@@ -1488,8 +1488,9 @@ input.form__radio:focus + label.form__radio-title:before {
   border: 0.14286rem solid #e45028; }
 
 input.form__radio:checked + label.form__radio-title:before {
-  background: url("../images/orders/ellipse.png") no-repeat center;
-  background-color: white; }
+  background: url("../images/orders/ellipse.png");
+  background-color: #ffffff;
+  background-position: center; }
 
 label.form__checkbox-title:before {
   content: '';
@@ -1504,7 +1505,8 @@ label.form__checkbox-title:before {
   border: 0.14286rem solid transparent; }
 
 input.form__checkbox:checked + label.form__checkbox-title:before {
-  background-image: url("../images/orders/check.png"); }
+  background-image: url("../images/orders/check.png");
+  background-position: center; }
 
 .visually-hidden {
   position: absolute !important;
